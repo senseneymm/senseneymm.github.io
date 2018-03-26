@@ -1,0 +1,396 @@
+/*header styles*/
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, #navigationWrap a, body {
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+h1 {
+  color: #001d40;
+  font-weight: 200;
+  font-size: 1.6em;
+}
+
+h2 {
+  color: #6f3a8f;
+  font-size: 1em;
+}
+
+a {
+  color: #6f3a8f;
+}
+
+p {
+  font-family: Lora;
+}
+
+body {
+  margin: 0;
+  background-color: #e9edef;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: #001d40;
+}
+
+a:hover, #navigationLinks > a:hover:not(#currentPage), #emailLink:hover {
+  color: #2296bc;
+}
+
+/*flex basics*/
+
+.flexContain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+/*banner styles*/
+
+#bannerWrap, #navigationItems, #contentWrap {
+  margin: 0 auto;
+  height: 80px;
+  padding: 0 15px;
+}
+
+#bannerWrap, #contentWrap {
+  max-width: 1300px;
+  margin-top: 10px;
+}
+
+#bannerTitle > img {
+  height: 80px;
+  width: 70px;
+  display: inline-block;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+#bannerTitle > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  #bannerTitle > div * {
+    margin: 0;
+  }
+
+#bannerTitle a {
+  text-decoration: none;
+}
+
+#bannerTitle h1 {
+  color: #001d40;
+  letter-spacing: -1px;
+  font-weight: 600;
+  font-size: 2em;
+}
+
+#bannerTitle h2 {
+  color: #6f3a8f;
+}
+
+#bannerIcons > img {
+  height: 80px;
+  width: 104px;
+}
+
+/*navigation styles*/
+
+#navigationWrap {
+  background: #FFF;
+}
+
+  #navigationWrap div {
+    align-self: center;
+  }
+
+#navigationItems {
+  max-width: 1300px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#navigationLinks > a, #emailLink {
+  font-size: .8em;
+  text-transform: uppercase;
+  align-self: center;
+  text-decoration: none;
+  color: #001d40;
+}
+
+  #navigationLinks > a:not(:last-child) {
+    margin: 0 12px 0 0;
+    padding: 0 12px 0 0;
+    border-right: 1px solid #001d40;
+  }
+
+  #navigationLinks > a#currentPage, a#currentWork {
+    font-weight: 600;
+  }
+
+    #navigationLinks > a#currentPage:hover {
+      cursor: default;
+    }
+
+#navigationWrap div img#emailIcon {
+  height: 12.5px;
+  width: 18px;
+  margin-right: 10px;
+}
+
+/*work navigation*/
+
+#workNavigationWrap {
+  margin: 0 auto;
+  max-width: 1300px;
+  margin-top: 20px;
+}
+
+#currentWork {
+  font-weight: 600;
+}
+
+  #currentWork:hover {
+    color: #6f3a8f;
+  }
+
+#workNavigationWrap a {
+  text-decoration: none;
+}
+
+  #workNavigationWrap a:not(:last-child) {
+    margin-right: 8px;
+    padding-right: 12px;
+    border-right: 1px solid #001d40;
+  }
+
+  #workNavigationWrap a:hover:not(#currentWork) {
+    text-decoration: underline;
+  }
+
+/*content*/
+
+#contentWrap {
+  height: auto;
+  margin-bottom: 50px;
+}
+
+#imageContainer {
+  margin-top: 20px;
+  max-width: 1268px;
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+  #imageContainer img {
+    width: 100%;
+    max-width: 1268px;
+  }
+
+#graphicList {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+  #graphicList > li {
+    margin: 0 0 20px 0;
+  }
+
+.flexContain#graphicList li {
+  width: 40%;
+}
+
+  .flexContain#graphicList li:nth-child(odd) {
+    margin-right: 25px;
+  }
+/*work items*/
+ul.workItems {
+  margin: 15px 0 0 0;
+  padding: 0;
+}
+
+  ul.workItems > li {
+    list-style-type: none;
+    border: 1px solid #DBE0E6;
+    display: block;
+    background: #001d40;
+    margin: 25px 0 0 0;
+    max-width: 625px;
+    min-width: 200px;
+    width: 48.5%;
+  }
+
+    ul.workItems > li:nth-child(odd) {
+      margin-right: 25px;
+    }
+
+    ul.workItems > li a {
+      display: block;
+      max-height: 200px;
+      text-decoration: none;
+    }
+
+    ul.workItems > li img {
+      transition: .3s ease;
+    }
+
+    ul.workItems > li:hover {
+      cursor: pointer;
+    }
+
+    ul.workItems > li a div {
+      display: block;
+      max-height: 170px;
+      overflow: hidden;
+      transition: .3s ease;
+    }
+
+    ul.workItems > li a span {
+      display: block;
+      line-height: 30px;
+      padding: 0 12px;
+      background: #FFF;
+      border-top: 1px solid #DBE0E6;
+      border-bottom: 1px solid #DBE0E6;
+      font-weight: 600;
+      transition: .3s ease;
+    }
+
+  ul.workItems li:hover span {
+    color: #2296bc;
+    line-height: 35px;
+  }
+
+  ul.workItems li:hover div {
+    max-height: 165px;
+  }
+
+  ul.workItems li:hover img {
+    opacity: .85;
+  }
+
+/*footer styles*/
+
+#footerWrap {
+  background: #c5c9cf;
+  flex: 0 0 120px;
+  margin-top: auto;
+}
+
+  #footerWrap > .flexContain {
+    justify-content: center;
+    height: 120px;
+  }
+
+    #footerWrap > .flexContain p {
+      margin: 0 30px 0 0;
+      padding: 0 25px 0 0;
+      display: inline-block;
+      align-self: center;
+      border-right: 1px solid #e9edef;
+    }
+/*page headline*/
+.PageHeadline {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+  .PageHeadline h1 {
+    border-left: 2px solid #c5c9cf;
+    margin: 0 0 0 15px;
+    padding-left: 20px;
+    line-height: 1.5em;
+  }
+
+.BackButtonLink {
+  display: inline-block;
+}
+
+  .BackButtonLink > img {
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    position: relative;
+  }
+
+  .BackButtonLink:hover > img {
+    opacity: .5;
+  }
+
+#liveLink {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #2296bc;
+  text-decoration: none;
+  color: #fff;
+  align-self: center;
+  border-radius: 2px;
+}
+
+  #liveLink:hover {
+    background: #1c7b9b;
+  }
+
+  #liveLink:active {
+    background: #16617a;
+  }
+
+/*responsive styles*/
+@media only screen and (max-width: 890px) {
+  ul .workItems > li {
+    margin: 20px 0 0 0;
+  }
+
+    ul.workItems > li:nth-child(odd) {
+      margin-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+  ul.workItems > li {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+    ul.workItems > li:nth-child(odd) {
+      margin-right: 0;
+    }
+
+  #footerWrap > .flexContain {
+    flex-direction: column;
+    text-align: center;
+  }
+
+    #footerWrap > .flexContain p {
+      display: block;
+      margin: 0 0 10px 0;
+      padding: 0;
+      border: none;
+    }
+
+    #footerWrap > .flexContain a {
+      display: block;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  #bannerIcons {
+    display: none;
+  }
+}
