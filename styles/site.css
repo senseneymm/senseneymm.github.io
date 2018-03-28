@@ -212,7 +212,8 @@ a:hover, #navigationLinks > a:hover:not(#currentPage), #emailLink:hover {
   }
 
 .flexContain#graphicList li {
-  width: 40%;
+  flex: 0 0 40%;
+  flex-grow: 1;
 }
 
   .flexContain#graphicList li:nth-child(odd) {
@@ -394,8 +395,9 @@ ul.workItems {
     display: none;
   }
 }
+
 @media only screen and (max-width: 420px) {
-  #bannerTitle > img {
+  #bannerTitle > img, #navigationLinks {
     display: none;
   }
 }
