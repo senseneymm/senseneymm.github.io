@@ -285,6 +285,11 @@ ul.workItems {
     opacity: .85;
   }
 
+
+  ul.workItems > li:active img {
+    opacity: .6;
+  }
+
 /*footer styles*/
 
 #footerWrap {
