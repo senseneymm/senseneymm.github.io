@@ -61,7 +61,7 @@ a:hover, #navigationLinks > a:hover:not(#currentPage), #emailLink:hover {
 
 #bannerWrap, #navigationItems, #contentWrap {
   margin: 0 auto;
-  height: 80px;
+  height: 60px;
   padding: 0 15px;
 }
 
@@ -71,7 +71,7 @@ a:hover, #navigationLinks > a:hover:not(#currentPage), #emailLink:hover {
 }
 
 #bannerTitle > img {
-  height: 60px;
+  height: 80px;
   width: 70px;
   display: inline-block;
   margin-right: 20px;
