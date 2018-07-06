@@ -28,8 +28,8 @@ p {
 }
 
 body {
-  margin: 0;
-  background-color: #e9edef;
+  margin: auto;
+  width: 1000px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -70,11 +70,10 @@ a:hover, #navigationLinks > a:hover:not(#currentPage), #emailLink:hover {
   margin-top: 10px;
 }
 
-#bannerTitle > img {
-  height: 80px;
-  width: 70px;
+#bannerTitle img {
+  height: 260px;
+  width: 60px;
   display: inline-block;
-  margin-right: 20px;
   vertical-align: middle;
 }
 
