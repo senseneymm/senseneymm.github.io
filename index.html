@@ -1,16 +1,23 @@
 ﻿<!doctype html>
 <html lang="en">
 <head>
+<!-- jQuery Initiation -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116580793-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-116580793-1');
+  
+$(document).ready(function(){
+  $('#bannerWrap').load('banner.html');
+  });
+  
 </script>
-
   <meta charset="utf-8">
   <title>Madison Senseney</title>
   <meta name="description" content="Madison Senseney Design Portfolio">
@@ -19,132 +26,91 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<div id="bannerWrap"></div>
+  <div id="sectionIntro">
   <div>
-    <div id="bannerWrap" class="flexContain spaceBetween">
-      <div id="bannerTitle">
-        <div>
-          <a href="index.html">
-            <img src="ms-logo.svg" alt="madison logo"/>
-          </a>
-        </div>
-      </div>
-      <div id="bannerIcons">
-        <img src="toolsIcon.svg" alt="Pen Tool and Pencil Icons" />
-      </div>
+  <div class="flexContain">
+  <img src="homepageProfile.png" alt="Profile Picture" id="HomeProfile" />
+    <div id="contentIntro">
+    <h1><strong>Hi, I'm Madison Senseney.</strong></h1>
+    <p>I'm a User Experience Designer from PA. I create immersive interfaces for real people.</p>
+   <p>I believe conversation is the foundation for succesful design.</p>
+   <a href="#" target="_blank" class="button">Let's Talk</a>
+    </div>
     </div>
   </div>
-  <div id="navigationWrap">
-    <div id="navigationItems" class="flexContain spaceBetween">
-      <div id="navigationLinks" class="flexContain">
-        <a href="index.html" id="currentPage">My Work</a>
-      </div>
-      <div class="flexContain">
-        <img src="emailIcon.svg" alt="Email Icon" id="emailIcon" />
-        <a href="mailto:senseneymadison@gmail.com" id="emailLink">senseneymadison@gmail.com</a>
-      </div>
-    </div>
   </div>
-  <div>
-    <div id="contentWrap">
-      <div id="workNavigationWrap">
-        <a href="index.html" id="currentWork">All</a>
-        <a href="Application/Default.html">Application</a>
-        <a href="Concept/Default.html">Concept</a>
-        <a href="Email/Default.html">Email</a>
-        <a href="Graphic/Default.html">Graphic</a>
-        <a href="Print/Default.html">Print</a>
-      </div>
-      <ul class="workItems flexContain twoColumn">
+    <div id="myWork">
+    <div>
+    <h1 id="Work">My Work</h1>
+    
+      <ul class="workItems flexContain spaceBetween">
         <li>
           <a href="Application/Timeline.html">
             <div>
-              <img src="Timeline.png" alt="NCI at Frederick History Timeline Thumbnail" />
+             Timeline
             </div>
-            <span>NCI at Frederick History Timeline</span>
           </a>
         </li>
         <li>
           <a href="Application/Events.html">
             <div>
-              <img src="Events.png" alt="NCI at Frederick Events Calendar Thumbnail" />
+              Events Calendar
             </div>
-            <span>NCI at Frederick Events Calendar</span>
           </a>
         </li>
         <li>
           <a href="Application/Wizard.html">
             <div>
-              <img src="Wizard.png" alt="Shipping Wizard Thumbnail" />
+              Shipping Wizard
             </div>
-            <span>Shipping Wizard</span>
           </a>
         </li>
         <li>
           <a href="Application/TRP.html">
             <div>
-              <img src="TRP.png" alt="Technology Refresh Program Thumbnail" />
+             TRP
             </div>
-            <span>Technology Refresh Program</span>
-          </a>
-        </li>
-        <li>
-          <a href="Concept/GMC.html">
-            <div>
-              <img src="GMC.PNG" alt="Genome Modification Core Thumbnail" />
-            </div>
-            <span>Genome Modification Core</span>
           </a>
         </li>
         <li>
           <a href="Concept/SPTS.html">
             <div>
-              <img src="SPTS.PNG" alt="Safety Plan Tracking System Thumbnail" />
+              Safety Plan
             </div>
-            <span>Safety Plan Tracking System</span>
           </a>
         </li>
         <li>
           <a href="Email/Banners.html">
             <div>
-              <img src="AHAThumb.png" alt="Email Banner Thumbnail" />
+             Email Banner Graphics
             </div>
-            <span>HTML Email Banner Graphics</span>
           </a>
         </li>
         <li>
           <a href="Graphic/FAR.html">
             <div>
-              <img src="FAR.png" alt="Feature Rotator Article Thumbnail" />
+              FAR Graphics
             </div>
-            <span>Feature Rotator Article Graphics</span>
-          </a>
-        </li>
-        <li>
-          <a href="Graphic/CBL.html">
-            <div>
-              <img src="CBL.png" alt="Chemical Biology Laboratory Articles Thumbnail" />
-            </div>
-            <span>Chemical Biology Laboratory Article Graphics</span>
           </a>
         </li>
         <li>
           <a href="Print/Dataquest.html">
             <div>
-              <img src="DataquestThumb.png" alt="Dataquest Poster Thumbnail" />
+              Poster
             </div>
-            <span>Dataquest Data Call Poster</span>
-          </a>
-        </li>
-        <li>
-          <a href="Print/Ribbon.html">
-            <div>
-              <img src="RibbonThumb.png" alt="Ribbon Thumbnail" />
-            </div>
-            <span>Blue Ribbon Award</span>
           </a>
         </li>
       </ul>
     </div>
+    </div>
+  </div>
+  <div id="contactWrap">
+  <div>
+  <h1>Contact Me</h1>
+  <p>Email: <a href="mailto:senseneymadison@gmail.com">senseneymadison@gmail.com</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/madisonsenseney" target="_blank">linkedin.com/in/madisonsenseney</a></p>
+  </div>
   </div>
   <div id="footerWrap">
 
