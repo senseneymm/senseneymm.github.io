@@ -740,9 +740,14 @@ width: 47%;
     }
 
   #footerWrap > .flexContain {
-    flex-direction: column;
+    display: block;
     text-align: center;
   }
+	
+	#footerWrap > .flexContain * {
+	margin: 0 auto 5px auto;
+		background-position: center;
+	}
 
     #footerWrap > .flexContain p {
       display: block;
