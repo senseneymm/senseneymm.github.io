@@ -511,11 +511,11 @@ ul.arrowList {
 
 	#contactWrap::after {
 		background: url('../Images/contactBG.jpg');
-		background-size: 1920px auto;
-		background-repeat: repeat-y;
+		background-size: cover;
+		background-repeat: no-repeat;
 		content: "";
 		position: absolute;
-		top: -650px;
+		top: -200px;
 		bottom: 0;
 		right: 0;
 		left: 0;
