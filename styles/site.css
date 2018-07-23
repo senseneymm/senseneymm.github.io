@@ -13,7 +13,7 @@ body {
 
 	body::after {
 		background: url('../Images/homepageBG.jpg');
-		background-size: 100% auto;
+		background-size: 1920px auto;
 		background-repeat: repeat-y;
 		content: "";
 		opacity: 0.4;
@@ -511,11 +511,11 @@ ul.arrowList {
 
 	#contactWrap::after {
 		background: url('../Images/contactBG.jpg');
-		background-size: cover;
-		background-repeat: no-repeat;
+		background-size: 1920px auto;
+		background-repeat: repeat-y;
 		content: "";
 		position: absolute;
-		top: -200px;
+		top: -650px;
 		bottom: 0;
 		right: 0;
 		left: 0;
@@ -565,7 +565,7 @@ ul.arrowList {
 
 /** TRP Page **/
 
-#TRP, #Timeline, #FARGraphics {
+#TRP, #Timeline, #FARGraphics, #Events {
 	text-align: center;
 }
 
@@ -588,6 +588,11 @@ ul.arrowList {
 			#TRP .flexContain > div img.Small {
 				height: 85%;
 				width: 85%;
+			}
+
+			#Events img {
+				margin: 0 auto 15px auto;
+				max-width: 800px;
 			}
 
 /*footer styles*/
