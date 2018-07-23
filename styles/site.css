@@ -590,7 +590,7 @@ ul.arrowList {
 				width: 85%;
 			}
 
-			#Events img, #Wizard img  {
+			#Events div, #Wizard div  {
 				margin: 0 auto 15px auto;
 				max-width: 800px;
 			}
