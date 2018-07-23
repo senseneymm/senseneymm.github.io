@@ -13,7 +13,7 @@ body {
 
 	body::after {
 		background: url('../Images/homepageBG.jpg');
-		background-size: 1920px auto;
+		background-size: 100% auto;
 		background-repeat: repeat-y;
 		content: "";
 		opacity: 0.4;
