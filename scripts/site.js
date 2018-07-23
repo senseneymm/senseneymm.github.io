@@ -1,10 +1,4 @@
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'UA-116580793-1');
-  
-$(document).ready(function(){
+ $(document).ready(function(){
 	$('#bannerWrap').load('banner.html');
 	$('#footerWrap').load('footer.html');
   
