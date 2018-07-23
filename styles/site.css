@@ -745,7 +745,7 @@ width: 47%;
   }
 	
 	#footerWrap > .flexContain * {
-	margin: 0 auto 5px auto;
+	margin: 0 auto 10px auto;
 		background-position: center;
 	}
 
@@ -798,6 +798,9 @@ padding: 10px;
   #bannerTitle > img, #navigationLinks {
     display: none;
   }
+	
+	#footerWrap {
+	padding: 40px 10px;}
 }
 
 /*KEYFRAME TRANSITIONS*/
