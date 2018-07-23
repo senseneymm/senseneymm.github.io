@@ -5,7 +5,8 @@
   gtag('config', 'UA-116580793-1');
   
 $(document).ready(function(){
-  $('#bannerWrap').load('banner.html');
+	$('#bannerWrap').load('banner.html');
+	$('#footerWrap').load('footer.html');
   
   // Select all links with hashes
 $('a[href*="#"]')
@@ -47,7 +48,8 @@ $('a[href*="#"]')
       
       var sections = $('section')
   , nav = $('#bannerWrapHome')
-  , nav_height = nav.outerHeight();
+				, nav_height = nav.outerHeight();
+
  
  
 $(window).on('scroll', function () {
@@ -72,7 +74,7 @@ $(window).on('scroll', function () {
   $(window).scroll(function() {
 
     //After scrolling 10px from the top...
-    if ( $(window).scrollTop() >= 10 ) {
+    if ( $(window).scrollTop() >= 15 ) {
         $('#bannerWrap, #bannerWrapHome').addClass('condensedBanner');
 
     //Otherwise remove inline styles and thereby revert to original styling
