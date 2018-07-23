@@ -1,0 +1,825 @@
+/*header styles*/
+
+* {
+  box-sizing: border-box;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, #navigationWrap a, body {
+font-family: haptik-light,helvetica,"sans-serif";
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 1.7em;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 1.5em;
+}
+h3 {
+font-size: 1.1em;
+color:#2296bc;}
+
+h4 {
+margin-top:0;}
+
+a {
+  color: #1673b4;
+}
+
+html,body {
+        width: 100%;
+        min-height: 100%;
+        position: relative; 
+  margin:0;  
+}
+
+body {
+     -webkit-font-smoothing: antialiased;
+}
+
+
+body::after {
+  background: url('../Images/homepageBG.jpg');
+          background-size: 1920px auto;
+          background-repeat: repeat-y;
+    content: "";
+    opacity: 0.4;
+    position: absolute;
+    top: -386px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -2;   
+}
+
+
+/*Section Containers*/
+
+.sectionContentWrap {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 30px 15px;
+  overflow: auto;
+}
+
+a:hover, #navigationLinks > a:hover:not(#currentPage) {
+  color: #2296bc;
+}
+
+/*flex basics*/
+
+.flexContain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.flexContain.Column {
+flex-direction: column;
+}
+
+.flexContain .flex1 {
+flex: 1;}
+
+.flexContain .flex2 {
+flex: 2;}
+
+.flexContain.centerAlign {
+
+      align-items: center;}
+
+.flexContain.imageFlex img {
+border: 1px solid #c8c9cf;
+padding: 15px;
+}
+
+/*Flex Arrow List*/
+
+.flexContain > ul.arrowList:first-of-type {
+  margin-right: 30px;
+}
+
+/*banner styles*/
+
+#bannerWrap,#bannerWrapHome {
+position: sticky;
+background: rgb(255,255,255,.4);
+     padding: 25px 10px 0 10px;
+top: 0;
+transition: all 0.25s ease;
+      z-index: 100;
+}
+
+#bannerWrap .sectionContentWrap, #bannerWrapHome .sectionContentWrap {
+padding: 0 15px;}
+
+#bannerTitle img {
+      height: 34px;
+    width: 220px;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 0.25s ease;
+}
+
+#bannerTitle > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+  #bannerTitle > div * {
+    margin: 0;
+  }
+
+#bannerTitle a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+/*Condensed Banner*/
+
+.condensedBanner#bannerWrap,.condensedBanner#bannerWrapHome {
+padding: 10px;
+background: rgb(255,255,255,.8);
+      box-shadow: 0 1px 5px rgba(34, 25, 25, 0.2);
+}
+
+.condensedBanner #bannerTitle img {
+    height: 28px;
+    width: 181px;}
+
+.condensedBanner #navigationWrap a {
+font-size: .85rem;}
+
+.condensedBanner #navigationWrap a:not(:last-child) {
+margin: 0 20px 0 0;
+}
+
+/*navigation styles*/
+
+#navigationWrap {
+align-self: center;
+}
+
+#navigationWrap > a.currentSection {
+  font-weight: 600;
+  color: #2296bc;
+}
+
+#navigationWrap a {
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  color: #000;
+  font-size: .9rem;
+}
+
+  #navigationWrap a:not(:last-child) {
+    margin: 0 15px 0 0;
+  }
+
+  #navigationWrap a:hover:not(.currentSection) {
+    color: #2296bc;
+  }
+  
+
+    #navigationWrap > a.currentSection:hover {
+      cursor: default;
+    }
+
+/*Intro Section*/
+
+#sectionIntro {
+      margin: 80px 0;
+}
+
+#sectionIntro .sectionContentWrap {
+overflow: visible;}
+
+#sectionIntro #homepageProfile  {
+align-self: center;
+position: relative;
+margin-left: 2%;
+}
+
+#sectionIntro #homepageProfile #profileOverlay {
+    position: absolute;
+    top: -20px;
+    right: -7px;
+    background: transparent url(../Images/coffeeStain.svg) no-repeat;
+    display: block;
+    height: 300px;
+    width: 422px;
+    opacity: .8;
+}
+
+#sectionIntro img {
+      vertical-align: middle;
+}
+
+#contentIntro {
+    margin-left: 9%;
+width: 55%;
+font-size: 1.2rem;
+}
+
+#contentIntro  h1 {
+margin-top: 0;
+}
+
+/*content*/
+
+#myWork {
+text-align: center;
+background: #FFF;
+}
+
+#imageContainer {
+  margin-top: 20px;
+  max-width: 1268px;
+  height: 700px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+  #imageContainer img {
+    width: 100%;
+    max-width: 1268px;
+  }
+
+#graphicList {
+  margin: 20px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+  #graphicList > li {
+    margin: 0 0 20px 0;
+  }
+
+.flexContain#graphicList li {
+  flex: 0 0 40%;
+  flex-grow: 1;
+}
+
+  .flexContain#graphicList li:nth-child(odd) {
+    margin-right: 25px;
+  }
+
+/* My Work Container */
+
+#myWorkContainer * {
+	box-sizing: border-box;
+}
+
+#myWorkContainer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+	#myWorkContainer ul li {
+		display: inline-block;
+		opacity: 1;
+		width: 30%;
+		position: relative;
+	}
+	
+	#myWorkContainer ul li:not(:nth-child(3n)) {
+	margin-right: 2%;
+	}
+
+		#myWorkContainer ul li a {
+			display: block;
+			padding: 0 0 80px 0;
+			position: relative;
+			text-decoration: none;
+		}
+
+			#myWorkContainer ul li a .myWorkImage {
+				position: relative;
+				max-height: 190px;
+				overflow: hidden;
+			}
+
+				#myWorkContainer ul li a .myWorkImage img {
+					width: 100%;
+					display: block;
+					overflow: hidden;
+				}
+
+				#myWorkContainer ul li a .myWorkImage:after {
+					content: " ";
+					display: block;
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					background: transparent;
+				}
+
+				#myWorkContainer ul li a .myWorkImage:after, #myWorkContainer ul li a .myWorkIntro {
+					-webkit-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+					-moz-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+					-o-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+					-ms-transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+					transition: all 0.27s cubic-bezier(0.300, 0.100, 0.580, 1.000);
+				}
+
+			#myWorkContainer ul li a .myWorkIntro {
+				width: 100%;
+				height: 84px;
+				padding: 18px 20px;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				text-align: center;
+				color: #393939;
+			}
+
+				#myWorkContainer ul li a .myWorkIntro h3 {
+					margin-top: 0;
+    color: #000;
+				}
+
+		/*Hover state*/
+
+		#myWorkContainer ul li:hover a .myWorkIntro {
+			bottom: auto;
+			top: 50%;
+			margin-top: -80px;
+			color: #fff;
+			z-index: 3;
+		}
+
+			#myWorkContainer ul li:hover a .myWorkIntro:after {
+				content: " ";
+				display: block;
+				max-width: 32px;
+				height: 2px;
+				margin: 20px auto 0;
+				background: #fff;
+			}
+
+		#myWorkContainer ul li:hover a .myWorkImage:after {
+			background-color: rgba(34,150,188,.85);
+		}
+
+		#myWorkContainer ul li:hover a .myWorkIntro h3 {
+			color: #FFF;
+			font-weight: bold;
+		}
+
+/*Resume Section*/
+
+#myResume {
+background: #e1e4ea;}
+      
+      #myResume h2, #myResume > div > div:not(.flexContain){
+      text-align: center;}
+      
+      #myResume .button {
+      margin: 0 auto;}
+      
+      #myResume .flexContain {
+      margin-bottom: 20px;}
+      
+#myResume .flexContain > div:last-child {
+flex: 1;
+margin: 0 0 0 80px;}
+
+#myResume h3 {
+margin: 30px 0 20px 0;}
+
+#myResume h4 {
+margin: 20px 0 8px 0;}
+
+.button#PDF {
+margin-top: 30px;}
+
+ul.arrowList li {
+  position: relative;
+	padding-bottom: 10px;
+}
+
+ul.arrowList {
+  list-style: none;
+  padding-left: 30px;
+  margin-bottom: 0;
+}
+
+ul.arrowList li:before{
+   content: '';
+   position: absolute;
+   border-right:3px solid #232323;
+   border-bottom:3px solid #232323;
+   width:4px;
+   height:4px;
+   top: 8px;
+   left: -20px;
+   transform: translateY(-50%) rotate(-45deg);
+}
+
+#myResume p {
+margin: 3px 0 5px 0;}
+#myResume p.resumeLocation {
+text-transform: uppercase;
+margin:0 0 14px 0;
+font-size: .9em;}
+
+#myResume p.resumeLocation span {
+display: inline-block;
+border-left: 1px solid #232323;
+padding-left: 10px;
+margin-left: 8px;}
+
+#myResume .flexContain > div:first-child  ul.arrowList:first-of-type {
+margin-bottom: 46px;
+}
+  
+  /*Contact Me section*/
+  
+  #contactWrap {
+      overflow: hidden;
+      background: rgba(61, 67, 69, .8);
+padding: 1% 0;
+position: relative;
+color: #FFF;
+ text-align: center;
+  }
+  
+  #contactWrap::after {  
+  background: url('../Images/contactBG.jpg');
+          background-size: 1920px auto;
+          background-repeat: repeat-y;
+    content: "";
+    position: absolute;
+    top: -650px;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;   
+  }
+  
+  #emailContainer {
+     border-radius: 5px;
+ padding: 70px;
+ border: 3px solid #FFF;
+ margin: 0 auto 40px auto;
+ width: 70%;
+  }
+  
+  #contactWrap a{
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;}
+  
+  #contactWrap a:hover {
+  text-decoration: underline;}
+  
+  /*Social Media Icons*/
+  
+  .linkedIn {
+  background: url('../Images/linkedInIcon.svg')no-repeat left center;
+  height: 17px;
+  width: 19px;
+  display: block;}
+  
+  .linkedIn:hover {
+  background: url('../Images/linkedInIconHover.svg')no-repeat left center;
+  }
+  
+  .gMail {
+  background: url('../Images/gmailIcon.svg')no-repeat left center;
+  height: 17px;
+  width: 50px;
+  }
+  
+  .gMail:hover {
+  background: url('../Images/gmailIconHover.svg')no-repeat left center;
+  }
+
+
+/*footer styles*/
+
+#footerWrap {
+  background:#232323;
+  padding: 100px;
+  margin-top: auto;
+  color: #FFF;
+}
+
+  #footerWrap > .flexContain {
+    justify-content: center;
+  }
+
+    #footerWrap > .flexContain *:not(:last-child) {
+      margin: 0 30px 0 0;
+      padding: 0 25px 0 0;
+      display: inline-block;
+      align-self: center;
+      border-right: 1px solid #e9edef;
+    }
+    
+#footerWrap > .flexContain a {
+color: #FFF;
+text-decoration: none;}
+
+#footerWrap > .flexContain a:hover {
+text-decoration: underline;}
+    
+/*page headline*/
+.PageHeadline {
+  display: flex;
+  align-items: center;
+  margin: 0 0 20px 0;
+}
+
+  .PageHeadline h1 {
+    border-left: 2px solid #c5c9cf;
+    margin: 0 0 0 15px;
+    padding-left: 20px;
+    line-height: 1.5em;
+  }
+
+.BackButtonLink {
+  display: inline-block;
+}
+
+  .BackButtonLink > img {
+    height: 18px;
+    width: 18px;
+    top: 2px;
+    position: relative;
+  }
+
+  .BackButtonLink:hover > img {
+    opacity: .5;
+  }
+
+.button {
+font-weight: bold;
+color: #2296bc;
+background: rgba(255,255,255,.3);
+text-decoration: none;
+padding: 10px 20px;
+border: 3px solid #2296bc;
+border-radius: 5px;
+display: inline-block;
+align-self: center;
+     text-align: center;
+}
+
+.button:hover {
+background: rgba(255,255,255,.6);
+color: #393939;
+border-radius: 40px;
+border-color: #393939 !important;
+transition: all 0.3s ease 0s;}
+
+  #liveLink:hover {
+    background: #1c7b9b;
+  }
+
+  #liveLink:active {
+    background: #16617a;
+  }
+  
+  /*Content Page*/
+  
+  #contentWrap {
+  padding: 1% 0;
+  background: #FFF;
+  min-height: 100vh;
+  }
+  
+  
+  /**GALLERIA OVERRIDES**/
+  
+  .galleria-theme-classic .galleria-thumbnails-container {
+  disply: none;}
+  
+  
+        .galleria-theme-classic .galleria-stage{
+            top: 0px;
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            width: 600px;
+            size: 147px;
+        }
+        
+         #FAR  {
+         border: 1px solid #c8c9cf;
+         display: inline-block;
+         margin-top: 30px;}
+        
+       #FAR .galleria-theme-classic .galleria-stage {
+        width: 682px;
+        size: 170px;}
+        
+        .galleria-theme-classic .galleria-image-nav-left, .galleria-theme-classic .galleria-image-nav-right {
+        opacity: .4;}
+
+/**Email Banner Template**/
+
+.emailBannerTemplate {
+margin: 20px 0 0 40px;
+	background: #e5e7ed;
+	padding: 35px;
+	max-width: 670px;
+	float: right;
+}
+
+.emailBannerHead {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	background: #c8c9ce;
+	height: 50px;
+}
+
+	.emailBannerHead > span.Organization {
+		max-width: 80px;
+		display: inline-block;
+		font-weight: bold;
+		color: #545353;
+		position: relative;
+		left: 12px;
+		bottom:-2px;
+		margin-right: 5px;
+	}
+
+	.emailBannerHead > span.Application {
+		font-weight: bold;
+		font-size: 2.95em;
+		position: relative;
+		bottom: -2px;
+		right: -4px;
+		color: #FFF;
+		text-shadow: 0px 0px 3px #8e8e8e;
+	}
+	
+	.emailBannerBody {
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+	border-color: #c8c9cf;
+	border-bottom-left-radius: 5px; 
+	border-bottom-right-radius: 5px;
+	font-size: .8em;
+	padding: 20px;
+	}
+	
+	.emailBannerBody > div > div {
+	background: #FFF;
+	padding: 15px 10px;
+	border-radius: 5px;
+	}
+	
+	.emailBannerBody > div:first-child {
+margin: 0 30px 0 0;
+	}
+	
+	.emailBannerBody > div > div:first-child {
+	margin: 0 0 20px 0;}
+	
+	.emailBannerBody > div h2:first-child {
+	margin-top: 0;}
+	
+	.emailBannerBody .quickLinks {
+	padding:0;
+	margin:0;
+	list-style: none;
+	}
+	
+	.emailBannerBody .quickLinks li {
+	margin: 0 0 8px 0;
+	}
+	
+	/*Timeline*/
+	
+	.button#Timeline  {
+	margin-bottom: 30px;
+	}
+	
+
+/*responsive styles*/
+@media only screen and (max-width: 890px) {
+
+#sectionIntro {
+margin: 40px 0;}
+#sectionIntro #homepageProfile {
+display: none;}
+
+#contentIntro {
+width: 100%;
+margin-left: 2%;}
+
+#myWorkContainer ul li {
+width: 47%;
+}
+
+}
+
+@media only screen and (max-width: 715px) {
+  ul.workItems > li {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+    ul.workItems > li:nth-child(odd) {
+      margin-right: 0;
+    }
+
+  #footerWrap > .flexContain {
+    flex-direction: column;
+    text-align: center;
+  }
+
+    #footerWrap > .flexContain p {
+      display: block;
+      margin: 0 0 10px 0;
+      padding: 0;
+      border: none;
+    }
+
+    #footerWrap > .flexContain a {
+      display: block;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+#myWorkContainer ul li {
+width: 100%;
+}
+
+  #bannerIcons {
+    display: none;
+  }
+  
+  #emailContainer {
+  padding: 20px;}
+  
+  #sectionIntro {
+  margin: 20px 0;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+#navigationWrap {
+width: 100%;
+margin-top: 15px;}
+
+}
+
+@media only screen and (max-width: 420px) {
+
+#emailContainer {
+padding: 10px;}
+
+  #bannerTitle > img, #navigationLinks {
+    display: none;
+  }
+}
+
+/*KEYFRAME TRANSITIONS*/
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/*
+ * CSS Page Transitions
+ * Don't forget to add vendor prefixes!
+ */
+
+  /** Basic styles for an animated element */
+  .scene_element {
+    animation-duration: 0.2s;
+    transition-timing-function: ease-in;
+    animation-fill-mode: both;
+  }
+
+  /** An element that fades in and slides up */
+  .scene_element--fadeinup {
+    animation-name: fadeInUp;
+  }
