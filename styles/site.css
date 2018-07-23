@@ -565,7 +565,7 @@ ul.arrowList {
 
 /** TRP Page **/
 
-#TRP, #Timeline, #FARGraphics, #Events {
+#TRP, #Timeline, #FARGraphics, #Events, #Wizard {
 	text-align: center;
 }
 
@@ -590,7 +590,7 @@ ul.arrowList {
 				width: 85%;
 			}
 
-			#Events img {
+			#Events img, #Wizard img  {
 				margin: 0 auto 15px auto;
 				max-width: 800px;
 			}
